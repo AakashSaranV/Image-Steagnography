@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decode Text from Image</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #1e293b;
+      padding: 2rem;
+      border-radius: 1rem;
+      width: 350px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    h2 {
+      color: #f8fafc;
+      margin-bottom: 1.5rem;
+    }
+    input[type="file"] {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      background-color: #334155;
+      color: #f1f5f9;
+      border-radius: 0.5rem;
+      border: none;
+    }
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    a {
+      display: block;
+      margin-top: 1rem;
+      color: #93c5fd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Decode Text from Image</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required>
+      <button type="submit">Decode & Download</button>
+    </form>
+    <a href="/home">⬅ Back to Home</a>
+  </div>
+</body>
+</html>
